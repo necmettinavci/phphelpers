@@ -11,8 +11,18 @@
 namespace necmettinavci\PhpHelpers;
 
 
+/**
+ * Class PhpHelpers
+ * @package necmettinavci\PhpHelpers
+ */
 class PhpHelpers {
 
+    /**
+     * @param $str
+     * @param array $options
+     * @param string $ignoreDot
+     * @return string
+     */
     public static function seoUrl($str, $options = array(), $ignoreDot = '')
     {
         $str = mb_convert_encoding((string)$str, 'UTF-8', mb_list_encodings());
@@ -107,6 +117,10 @@ class PhpHelpers {
         return $options['lowercase'] ? mb_strtolower($str, 'UTF-8') : $str;
     }
 
+    /**
+     * @param $fullName
+     * @return array
+     */
     public static function separateFullName($fullName) {
         $names = explode(' ', trim($fullName));
         $wordCount = count($names);
@@ -121,6 +135,9 @@ class PhpHelpers {
         return array($firstname, $lastname);
     }
 
+    /**
+     * @return array|false|string
+     */
     public static function clientIP(){
         if (getenv("HTTP_CLIENT_IP")) {
             $ip = getenv("HTTP_CLIENT_IP");
@@ -137,6 +154,10 @@ class PhpHelpers {
     }
 
 
+    /**
+     * @param $key
+     * @return string
+     */
     public static function getCookie($key){
          return htmlspecialchars($_COOKIE[$key]);
     }
