@@ -1,0 +1,20 @@
+{
+    "name": "necmettinavci/phphelpers",
+    "type": "library", 
+    "license": "MIT",
+    "description": "PHP Helpers", 
+    "minimum-stability": "dev",
+    "keywords": ["helper", "helpers"], 
+    "authors": [
+        {
+            "name": "Necmettin AVCI",
+            "email": "necmettinavci@gmail.com"
+        }
+    ], 
+    "require": {},
+    "autoload": {
+        "psr-4": {
+           "necmettinavci\\PhpHelpers\\" : "src"
+        }
+    } 
+}
