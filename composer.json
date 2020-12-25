@@ -3,7 +3,7 @@
     "type": "library", 
     "license": "MIT",
     "description": "PHP Helpers", 
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "keywords": ["helper", "helpers"], 
     "authors": [
         {
